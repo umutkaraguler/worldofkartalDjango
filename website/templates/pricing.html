@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Haber Yaz {% endblock %}
+{% block meta_description %}  {% endblock %}
+{% block content %}
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <!-- Book An Oppointment Area Start -->
+  <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/download.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center white">
+            <h2>Haber Yaz</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Appointment Form -->
+          <div class="appointment-form">
+            <form action="{% url 'appointment'%}" method="post">
+              {% csrf_token  %}
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-name" class="form-control" placeholder="İsim" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-phone" class="form-control" placeholder="Soyad" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="email" name="your-email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-address" class="form-control" placeholder="Yaş">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-schedule" class="form-control">
+                      <option value="First Choice Appointment Time">Neyle İlgili?</option>
+                      <option value="Beşiktaş">Beşiktaş</option>
+                      <option value="Dünya">Dünya</option>
+                      <option value="Süper Lig">Süper Lig</option>
+                      <option value="Şampiyonlar Ligi">Şampiyonlar Ligi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-date" class="form-control">
+                      <option value="Choose Your Date">Yazdığınız Gün</option>
+                      <option value="Monday">Pazartesi</option>
+                      <option value="Tuesday">Salı</option>
+                      <option value="Wednesday">Çarşamba</option>
+                      <option value="Thursday">Perşembe</option>
+                      <option value="Cuma">Cuma</option>
+                      <option value="Cumartesi">Cumartesi</option>
+                      <option value="Pazar">Pazar</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-30">
+                    <textarea name="your-message" class="form-control" placeholder="Your Message"></textarea>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn dento-btn">Gönder</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Book An Oppointment Area End -->
+  <!-- ***** Blog Area Start ***** -->
+  <section class="dento-blog-area section-padding-100-0 clearfix">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Son Dakika Haberler</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="./blog-details.html">
+              <img src="{% static 'website/img/bg-img/Montero2.png' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Francisco Montero Beşiktaşta!!!</a>
+              <hr>
+              <p>Uzun süredir Atletico Madridle görüşülüyordu ve anlaşıldı!</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 ağustos 2020</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 yorum</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="./blog-details.html">
+              <img src="{% static 'website/img/bg-img/kalınıc.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Kalınıc Yakın!</p>
+                <hr>
+                <p>Uzun süredir Beşiktaş yönetimi temas halinde oyuncunun net maaşı 6-7 milyon euro bu yüzden transfer veto edilebilir. </p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 ağustos 2020</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 yorum</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="./blog-details.html">
+              <img src="{% static 'website/img/bg-img/zeluıs.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Ze Luıs'le Anlaşma Tamam sırada Kulübü var!!</a>
+              <hr>
+              <p>Ze Luıs'le 2.2 milyon avroya anlaşan beşiktaş külübü ikna etmeye yöneldi.</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 29 ağustos 2020</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 yorum</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Blog Area End ***** -->
+  <!-- ***** Dento Pricing Table Area End ***** -->
+
+  
+{% endblock %}

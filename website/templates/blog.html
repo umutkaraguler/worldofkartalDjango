@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Haberler {% endblock %}
+{% block meta_description %}  {% endblock %}
+{% block content %}
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/reis.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Haberler</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Anasayfa</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Haberler</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- *****Blog Area Start ***** -->
+  <section class="dento-blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+
+          <!-- Single Blog Item -->
+          <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/Montero 3.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Beşiktaş'ta Montero Vida'nın yeni partneri</a>
+              <p>Beşiktaş transfer haberi... Atletico Madrid’in genç yıldızını 1 yıllığına kiralayan Siyah-Beyazlılar, 21 yaşındaki stoperi yarın İstanbul’a getirmeyi planlıyor. 1,87’lik futbolcunun, savunma hattında Domagoj Vida’nın yeni partneri olması bekleniyor.</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 30 Ağustos 2020, Pazar 09:17</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 Yorum</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Blog Item -->
+          <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/kalınıc2.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Beşiktaş bombayı patlatıyor! Nikola Kalinic imzaya yakın.</a>
+              <p> Transfer çalışmalarını hız kesmeden sürdüren Beşiktaş, Hırvat forvet Nikola Kalinic ile el sıkıştı. Kulübü Atletico Madrid'le kalan son pürüzlerin giderilmesi durumunda 32 yaşındaki futbolcu İstanbul'a gelecek.. ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 30 Ağustos 2020, Pazar.</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Yorum</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Blog Item -->
+          <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/zeluıs2.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Ze Luıs'le Anlaşma Tamam...</a>
+              <p>Transfer çalışmalarını hız kesmeden sürdüren Beşiktaş, Hırvat forvet Ze Luıs ile el sıkıştı.</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 25 Ağustos</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 Yorum</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Blog Item -->
+          <!--<div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50"><--
+            <!-- Blog Thumbnail -->
+            <!--<div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <!--<div class="blog-content">
+              <a href="./blog-details.html" class="post-title">How long does numbness last after the dentist?</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 yorum</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Blog Item -->
+         <!-- <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <!--<div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/20.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <!--<div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Lie bumps (transient lingual papillitis): What to know</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 yorum</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav class="dento-pagination mb-100">
+            <ul class="pagination">
+              <li class="page-item active"><a class="page-link" href="blog.html">1</a></li>
+              <!--<li class="page-item"><a class="page-link" href="blog.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="blog.html"><i class="fa fa-angle-right"></i></a></li>-->
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+            <!-- Single Widget Area -->
+           
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area catagories-widget">
+              <h5 class="widget-title">Kategori</h5>
+
+              <!-- catagories list -->
+              <ul class="catagories-list">
+                <li><a href="http://localhost:8000/">Anasayfa</a></li>
+                <li><a href="about.html">Hakımızda</a></li>
+                <li><a href="service.html">Hizmetimiz</a></li>
+                <li><a href="pricing.html">Haber Yaz</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+              </ul>
+            </div>
+
+            <!-- Single Widget Area -->
+            
+
+              <!-- Single News Area -->
+              
+              <!-- Single News Area -->
+              
+
+              <!-- Single News Area -->
+              
+            <!-- Single Widget Area -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- *****Blog Area End ***** -->
+  {% endblock %}
+  
